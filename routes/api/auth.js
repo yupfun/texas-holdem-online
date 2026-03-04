@@ -15,4 +15,16 @@ router.post(
   login,
 );
 
+/**
+ * Wallet ownership verification (future Web3 entry point)
+ *
+ * Not implemented in this take-home assignment. See:
+ *   hiring/candidates/wallet-verification.md
+ */
+router.post('/wallet/verify', (req, res) => {
+  return res.status(501).json({
+    message: 'Not implemented; see hiring/candidates/wallet-verification.md',
+  });
+});
+
 module.exports = router;                                                                                                                                                                                            
